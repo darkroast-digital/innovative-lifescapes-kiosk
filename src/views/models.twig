@@ -1,0 +1,25 @@
+{% extends 'layouts/page.twig' %}
+
+{% block pageclass %}models{% endblock %}
+
+{% block content %}
+
+    <div class="container container-collapsed container-full modelsContainer">
+        <div class="column-6 modelsContent">
+            <h3>Our Vision</h3>
+            <p>Landscape Effects Design & Build was founded by Paul St. Pierre. In its 25-year history, it has earned the reputation of being one of Southwestern Ontario’s premier landscaping companies. Having received over 40 Landscape Ontario awards over the last 10 years, the team at Landscape Effects is excited to apply their experience and skills to a new opportunity </p>
+            <ul class="modelsPlans">
+                <li data-model="Model 1"><img src="/assets/img/model1-plan.jpg" draggable="false"></li>
+                <li data-model="Model 2"><img src="/assets/img/model2-plan.jpg" draggable="false"></li>
+                <li data-model="Model 3"><img src="/assets/img/model3-plan.jpg" draggable="false"></li>
+            </ul>
+        </div>
+        <div class="column-6 modelsGallery">
+            <ul>
+                <li data-model="Model 1"><img src="/assets/img/model1.png" draggable="false"></li>
+                <li data-model="Model 2"><img src="/assets/img/model2.png" draggable="false"></li>
+                <li data-model="Model 3"><img src="/assets/img/model3.png" draggable="false"></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

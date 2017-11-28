@@ -1,0 +1,250 @@
+/*
+|--------------------------------------------------------------------------
+| #SYLPH UI
+|--------------------------------------------------------------------------
+*/
+
+
+
+
+// #CONFIGURATION
+// =========================================================================
+
+@import 'config/config.colors';
+@import 'config/config.core';
+@import 'config/config.theme';
+
+
+
+
+// #TOOLS
+// =========================================================================
+
+@import 'tools/tools.breakpoints';
+@import 'tools/tools.color-manipulation';
+@import 'tools/tools.units';
+@import 'tools/tools.pow';
+@import 'tools/tools.modular-scale';
+@import 'tools/tools.fluid';
+@import 'tools/tools.rhythm';
+
+
+
+
+// #SETTINGS
+// =========================================================================
+
+@import 'settings/settings.animations';
+@import 'settings/settings.colors';
+@import 'settings/settings.easing';
+@import 'settings/settings.radius';
+@import 'settings/settings.shadows';
+@import 'settings/settings.z-index';
+
+
+
+
+// #RESET
+// =========================================================================
+
+@import 'reset/reset.normalize';
+@import 'reset/reset.base';
+
+
+
+
+// #CORE
+// =========================================================================
+
+@import 'core/core.grid';
+@import 'core/core.typography';
+@import 'core/core.theme';
+
+
+
+
+// #HELPERS
+// =========================================================================
+
+@import 'helpers/helpers.flex-position';
+@import 'helpers/helpers.focus';
+
+
+
+
+// #ELEMENTS
+// =========================================================================
+
+@import 'elements/elements.icons';
+@import 'elements/elements.buttons';
+@import 'elements/elements.divider';
+@import 'elements/elements.forms';
+@import 'elements/elements.labels';
+@import 'elements/elements.images';
+@import 'elements/elements.badges';
+@import 'elements/elements.tooltips';
+@import 'elements/elements.typography';
+
+
+
+
+
+// #COMPONENTS
+// =========================================================================
+
+@import 'components/components.accordion';
+@import 'components/components.alerts';
+@import 'components/components.avatars';
+@import 'components/components.blocks';
+@import 'components/components.breadcrumb';
+@import 'components/components.cards';
+@import 'components/components.dropdown';
+@import 'components/components.hamburger';
+@import 'components/components.heroes';
+@import 'components/components.modals';
+@import 'components/components.menu'; 
+@import 'components/components.nav';
+@import 'components/components.off-canvas';
+@import 'components/components.overlay';
+@import 'components/components.progress';
+@import 'components/components.tables';
+@import 'components/components.tabs';
+@import 'components/components.media-object';
+
+
+
+
+// #MODIFIERS
+// =========================================================================
+
+@import 'modifiers/modifiers.padding';
+@import 'modifiers/modifiers.margin';
+@import 'modifiers/modifiers.color';
+@import 'modifiers/modifiers.background';
+@import 'modifiers/modifiers.typography';
+
+
+
+
+// #OVERRIDES
+// =========================================================================
+
+@import 'overrides/overrides.disabled';
+@import 'overrides/overrides.visually-hidden';
+
+
+
+
+
+// #VENDORS
+// =========================================================================
+
+/* Slider */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: block;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+
+
+
+// #THEME
+// =========================================================================
+
+@import 'theme/theme.style';
