@@ -1,0 +1,2 @@
+# shinra
+# innovative-lifescapes-kiosk
